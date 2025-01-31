@@ -10,22 +10,72 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- tailwindcss -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
     <style type="text/tailwindcss">
         @theme {
-          --color-clifford: #da373d;
+            /* color */
+          /* --color-clifford: #da373d; */
           --color-accent: #FFDC26;
           --color-primary: #FFFFFF;
           --color-secondary: #FFF9F4;
           --color-text: #111111;
+            /* font */
           --font-adlam-display: "ADLaM Display", 'serif';
           --font-sora: "Sora", 'serif';
+
+          --my-max-width: 1320px;
+
+          --breakpoint-1320xl: 1320px;
+          --breakpoint-425xl: 425px;
         }
       </style>
 </head>
-<body>
-    
+<body class="font-sora">
+    <!-- header section -->
+     <header>
+        <!-- nav bar -->
+         <nav class="bg-secondary">
+            <section class="px-4 1320xl:px-0 1320xl:max-w-(--my-max-width) mx-auto">
+                <div class="flex justify-between items-center py-3 md:py-[26px]">
+                    <!-- start -->
+                    <div  class="flex justify-between items-center gap-3">
+                        <img class="w-12" src="c1-assets/logo-header.png" alt="logo icon">
+                        <p class=" hidden 425xl:block text-[26px] font-normal text-text">Browse<Span class="text-accent">4</Span>Pets</p>
+                    </div>
+                    <!-- mid -->
+                    <div class="hidden lg:block">
+                        <ul class="flex justify-between items-center gap-8 text-xl text-text">
+                            <li><a href="#">Find a Pets</a></li>
+                            <li><a href="#">Breeds</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <!-- end -->
+                     <div class="md:hidden text-[30px] text-text">
+                        <i class="fa-solid fa-bars"></i>
+                     </div>
+                    <div class="hidden md:flex justify-between items-center gap-4 text-text text-xl">
+                        <i class="fa-regular fa-bell"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class=" space-x-3">
+                            <button class="text-xl px-[30px] py-[10px] border rounded-lg border-accent cursor-pointer">Login</button>
+                            <button class="text-xl px-[30px] py-[10px] bg-accent rounded-lg border-accent cursor-pointer">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+         </nav>
+     </header>
+
+     <!-- main section -->
+      <main></main>
+
+      <!-- footer section -->
+       <footer></footer>
 </body>
 </html>
