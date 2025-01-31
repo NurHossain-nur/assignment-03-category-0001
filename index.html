@@ -24,6 +24,7 @@
           --color-primary: #FFFFFF;
           --color-secondary: #FFF9F4;
           --color-text: #111111;
+          --color-card-bg: #F9DF8A;
             /* font */
           --font-adlam-display: "ADLaM Display", 'serif';
           --font-sora: "Sora", 'serif';
@@ -84,7 +85,63 @@
      </header>
 
      <!-- main section -->
-      <main></main>
+      <main>
+        <!-- categories section -->
+         <section class="px-4 1320xl:px-0 1320xl:max-w-(--my-max-width) mx-auto mb-14 md:mb-32">
+            <h2 class="font-adlam-display text-2xl md:text-4xl mb-8 md:mb-12">Browse By Categories</h2>
+            <!-- cards -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[10px] md:gap-6">
+                <!-- card 1 -->
+                <div class="bg-card-bg rounded-[10px] md:rounded-xl px-[42px] md:px-12 py-[30px] md:py-[34px] flex flex-col justify-center items-center">
+                    <div class="w-[104px] p-7 bg-primary rounded-full mb-5 md:mb-6">
+                        <img src="c1-assets/dog-cartoon.png" alt="">
+                    </div>
+                    <h3 class="mb-[10px] md:mb-3 font-adlam-display text-lg md:text-xl">Dog</h3>
+                    <p class="text-sm md:text-base">3 items</p>
+                </div>
+                <!-- card 2 -->
+                <div class="bg-card-bg rounded-[10px] md:rounded-xl px-[42px] md:px-12 py-[30px] md:py-[34px] flex flex-col justify-center items-center">
+                    <div class="w-[104px] p-7 bg-primary rounded-full mb-5 md:mb-6">
+                        <img src="c1-assets/fish-cartoon.png" alt="">
+                    </div>
+                    <h3 class="mb-[10px] md:mb-3 font-adlam-display text-lg md:text-xl">Fish</h3>
+                    <p class="text-sm md:text-base">3 items</p>
+                </div>
+                <!-- card 3 -->
+                <div class="bg-card-bg rounded-[10px] md:rounded-xl px-[42px] md:px-12 py-[30px] md:py-[34px] flex flex-col justify-center items-center">
+                    <div class="w-[104px] p-7 bg-primary rounded-full mb-5 md:mb-6">
+                        <img src="c1-assets/cat-cartoon.png" alt="">
+                    </div>
+                    <h3 class="mb-[10px] md:mb-3 font-adlam-display text-lg md:text-xl">Cat</h3>
+                    <p class="text-sm md:text-base">3 items</p>
+                </div>
+                <!-- card 4 -->
+                <div class="bg-card-bg rounded-[10px] md:rounded-xl px-[42px] md:px-12 py-[30px] md:py-[34px] flex flex-col justify-center items-center">
+                    <div class="w-[104px] p-7 bg-primary rounded-full mb-5 md:mb-6">
+                        <img src="c1-assets/bird-cartoon.png" alt="">
+                    </div>
+                    <h3 class="mb-[10px] md:mb-3 font-adlam-display text-lg md:text-xl">Birds</h3>
+                    <p class="text-sm md:text-base">3 items</p>
+                </div>
+                <!-- card 5 -->
+                <div class="bg-card-bg rounded-[10px] md:rounded-xl px-[42px] md:px-12 py-[30px] md:py-[34px] flex flex-col justify-center items-center">
+                    <div class="w-[104px] p-7 bg-primary rounded-full mb-5 md:mb-6">
+                        <img src="c1-assets/mouse-cartoon.png" alt="">
+                    </div>
+                    <h3 class="mb-[10px] md:mb-3 font-adlam-display text-lg md:text-xl">Small pet</h3>
+                    <p class="text-sm md:text-base">3 items</p>
+                </div>
+                <!-- card 6 -->
+                <div class="bg-card-bg rounded-[10px] md:rounded-xl px-[42px] md:px-12 py-[30px] md:py-[34px] flex flex-col justify-center items-center">
+                    <div class="w-[104px] p-7 bg-primary rounded-full mb-5 md:mb-6">
+                        <img src="c1-assets/rabbit-cartoon.png" alt="">
+                    </div>
+                    <h3 class="mb-[10px] md:mb-3 font-adlam-display text-lg md:text-xl">Rabit</h3>
+                    <p class="text-sm md:text-base">3 items</p>
+                </div>
+            </div>
+         </section>
+      </main>
 
       <!-- footer section -->
        <footer></footer>
