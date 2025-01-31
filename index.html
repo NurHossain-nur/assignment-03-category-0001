@@ -32,10 +32,12 @@
 
           --breakpoint-1320xl: 1320px;
           --breakpoint-425xl: 425px;
+
+          --my-margin-botom: 140px;
         }
       </style>
 </head>
-<body class="font-sora">
+<body class="font-sora text-text">
     <!-- header section -->
      <header>
         <!-- nav bar -->
@@ -70,6 +72,15 @@
                 </div>
             </section>
          </nav>
+         <!-- banner section -->
+          <section class="px-4 1320xl:px-0 1320xl:max-w-(--my-max-width) mx-auto mt-8 md:mt-20 mb-14 md:mb-(--my-margin-botom)">
+            <div class="h-[425px] md:h-[600px] lg:h-[750px] 1320xl:w-full bg-[url(./c1-assets/cat-big.png)] bg-contain bg-no-repeat bg-bottom ">
+                <!-- <img src="c1-assets/cat-big.png" alt=""> -->
+                 <h1 class="font-adlam-display font-normal text-[30px] md:text-[56px] mt-6 mb-3 md:mb-4">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
+                 <p class="text-base md:text-xl md:leading-9 mb-3 md:mb-6">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+                 <button class="text-base md:text-xl px-[30px] py-[10px] bg-accent rounded-lg border-accent cursor-pointer">Find a pet</button>
+            </div>
+          </section>
      </header>
 
      <!-- main section -->
