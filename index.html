@@ -23,6 +23,7 @@
           --color-accent: #FFDC26;
           --color-primary: #FFFFFF;
           --color-secondary: #FFF9F4;
+          --color-secondary-2: #EDC5A0;
           --color-text: #111111;
           --color-card-bg: #F9DF8A;
             /* font */
@@ -89,8 +90,8 @@
      <header>
         <!-- nav bar -->
          <nav class="bg-secondary">
-            <section class="px-4 1320xl:px-0 1320xl:max-w-(--my-max-width) mx-auto">
-                <div class="flex justify-between items-center py-3 md:py-[26px]">
+            <section class="px-4 1320xl:px-0 1320xl:max-w-(--my-max-width) mx-auto border-b-1 border-text md:border-none">
+                <div class="flex justify-between items-center py-3 md:py-[26px] ">
                     <!-- start -->
                     <div  class="flex justify-between items-center gap-3">
                         <img class="w-12" src="c1-assets/logo-header.png" alt="logo icon">
@@ -192,6 +193,52 @@
                     </div>
                     <h3 class="mb-[10px] md:mb-3 font-adlam-display text-lg md:text-xl">Rabit</h3>
                     <p class="text-sm md:text-base">3 items</p>
+                </div>
+            </div>
+         </section>
+        <!-- Adopt a Pet section -->
+         <section class="px-4 1320xl:px-0 1320xl:max-w-(--my-max-width) mx-auto mb-14 md:mb-32">
+            <div class="mb-8 md:mb-12">
+                <h2 class="font-adlam-display text-2xl md:text-4xl mb-3">Adopt a Pet</h2>
+                <p class="text-sm md:text-base text-[rgba(17,17,17,0.8)] mb-3">Looking for a loving pet? Adopt one today!</p>
+            </div>
+            <!-- cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[10px] md:gap-6">
+                <!-- card 1 -->
+                <div class="bg-secondary-2 rounded-[10px] md:rounded-xl border-t-3 border-secondary-2 flex flex-col justify-center items-center pb-3">
+                    <div class="w-full h-[300px] p-7 bg-primary mb-5 md:mb-6 rounded-[10px] md:rounded-xl flex justify-center">
+                        <img class=" h-full" src="c1-assets/cat.png" alt="">
+                    </div>
+                    <h3 class="mb-2 font-adlam-display text-lg md:text-xl">Pusi, 2 years</h3>
+                    <p class="text-sm md:text-base mb-4">Available 3</p>
+                    <button class="text-base md:text-xl px-[30px] py-[10px] bg-primary rounded-lg border-accent cursor-pointer">Meet Me</button>
+                </div>
+                <!-- card 2 -->
+                <div class="bg-secondary-2 rounded-[10px] md:rounded-xl border-t-3 border-secondary-2 flex flex-col justify-center items-center pb-3">
+                    <div class="w-full h-[300px] p-7 bg-primary mb-5 md:mb-6 rounded-[10px] md:rounded-xl flex justify-center">
+                        <img class=" h-full" src="c1-assets/dog.png" alt="">
+                    </div>
+                    <h3 class="mb-2 font-adlam-display text-lg md:text-xl">Tom, 7 month</h3>
+                    <p class="text-sm md:text-base mb-4">Available 2</p>
+                    <button class="text-base md:text-xl px-[30px] py-[10px] bg-primary rounded-lg border-accent cursor-pointer">Meet Me</button>
+                </div>
+                <!-- card 3 -->
+                <div class="bg-secondary-2 rounded-[10px] md:rounded-xl border-t-3 border-secondary-2 flex flex-col justify-center items-center pb-3">
+                    <div class="w-full h-[300px] p-7 bg-primary mb-5 md:mb-6 rounded-[10px] md:rounded-xl flex justify-center">
+                        <img class=" h-full" src="c1-assets/rabbit.png" alt="">
+                    </div>
+                    <h3 class="mb-2 font-adlam-display text-lg md:text-xl">Roki, 1 years</h3>
+                    <p class="text-sm md:text-base mb-4">Available 5</p>
+                    <button class="text-base md:text-xl px-[30px] py-[10px] bg-primary rounded-lg border-accent cursor-pointer">Meet Me</button>
+                </div>
+                <!-- card 4 -->
+                <div class="bg-secondary-2 rounded-[10px] md:rounded-xl border-t-3 border-secondary-2 flex flex-col justify-center items-center pb-3">
+                    <div class="w-full h-[300px] p-7 bg-primary mb-5 md:mb-6 rounded-[10px] md:rounded-xl flex justify-center">
+                        <img class=" h-full" src="c1-assets/parrot.png" alt="">
+                    </div>
+                    <h3 class="mb-2 font-adlam-display text-lg md:text-xl">Mow, 1 years</h3>
+                    <p class="text-sm md:text-base mb-4">Available</p>
+                    <button class="text-base md:text-xl px-[30px] py-[10px] bg-primary rounded-lg border-accent cursor-pointer">Meet Me</button>
                 </div>
             </div>
          </section>
@@ -356,7 +403,7 @@
                 <div>
                     <div class="flex gap-3 items-center mb-4 sm:mb-6">
                         <img class="w-9 h-9 sm:w-12 sm:h-12" src="c1-assets/logo-footer.png" alt="">
-                        <p class=" hidden 425xl:block text-xl sm:text-[26px] font-normal text-text">Browse<Span class="text-accent">4</Span>Pets</p>
+                        <p class=" text-xl sm:text-[26px] font-normal text-text">Browse<Span class="text-accent">4</Span>Pets</p>
                     </div>
                     <p class="text-base sm:text-xl text-[rgba(17,17,17,0.7)]">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
                 </div>
