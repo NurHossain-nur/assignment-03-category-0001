@@ -35,7 +35,53 @@
           --breakpoint-425xl: 425px;
 
           --my-margin-botom: 140px;
+
+
+          --animate-first: first 30s ease-in-out infinite;
+            @keyframes first {
+             0% {
+                width: 0%;
+             }
+            33.3% {
+                width: 100%;
+            }
+            100% {
+                width: 100%;
+            }
+            }
+          --animate-second: second 30s ease-in-out infinite;
+            @keyframes second {
+             0% {
+                width: 0%;
+             }
+            33.3% {
+                width: 0%;
+            }
+            66.6% {
+                width: 100%;
+            }
+            100% {
+                width: 100%;
+            }
+            }
+          --animate-third: third 30s ease-in-out infinite;
+            @keyframes third {
+             0% {
+                width: 0%;
+             }
+            66.6% {
+                width: 0%;
+            }
+            85% {
+                width: 100%;
+            }
+            100% {
+                width: 100%;
+            }
+            }
         }
+
+
       </style>
 </head>
 <body class="font-sora text-text">
@@ -77,7 +123,15 @@
           <section class="px-4 1320xl:px-0 1320xl:max-w-(--my-max-width) mx-auto mt-8 md:mt-20 mb-14 md:mb-(--my-margin-botom)">
             <div class="h-[425px] md:h-[600px] lg:h-[750px] 1320xl:w-full bg-[url(./c1-assets/cat-big.png)] bg-contain bg-no-repeat bg-bottom ">
                 <!-- <img src="c1-assets/cat-big.png" alt=""> -->
-                 <h1 class="font-adlam-display font-normal text-[30px] md:text-[56px] mt-6 mb-3 md:mb-4">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
+                 <div class="relative">
+                    <!-- <h1 class="font-adlam-display font-normal text-[30px] md:text-[56px] mt-6 mb-3 md:mb-4">Pamper Your Pet,<br> Because They Deserve <br> The Bes</h1> -->
+
+                    <h1 class="font-adlam-display font-normal text-[30px] md:text-[56px] mt-6 mb-3 md:mb-4"><span class="relative before:content-['Pamper_Your_Pet,_'] before:absolute before:overflow-hidden before:text-nowrap before:text-accent  before:animate-first  ">Pamper Your Pet, </span><br><span class="relative before:content-['Because_They_Deserve_'] before:absolute before:overflow-hidden before:text-nowrap before:text-accent  before:animate-second "> Because They Deserve </span><br> <span class="relative before:content-['The_Bes_'] before:absolute before:overflow-hidden before:text-nowrap before:text-accent  before:animate-third  ">The Bes</span></h1>
+
+                     <!-- <p class="sliding-text">heugn klffjhruifhgvn </p> -->
+                 </div>
+
+                 
                  <p class="text-base md:text-xl md:leading-9 mb-3 md:mb-6">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
                  <button class="text-base md:text-xl px-[30px] py-[10px] bg-accent rounded-lg border-accent cursor-pointer">Find a pet</button>
             </div>
@@ -151,7 +205,7 @@
                         <h3 class="font-adlam-display text-[27px] md:text-[32px] text-black mb-4 md:mb-6">T- Shirt For Dogs</h3>
                         <p class="text-sm md:text-base text-[rgba(17,17,17,0.7)] mb-3">Discover a world of treats, toys, and essentials handpicked for </p>
                         <div class="relative">
-                            <button class="absolute md:hidden text-base md:text-xl px-[30px] py-[10px] bg-primary rounded-lg border-accent cursor-pointer">Shop Now</button>
+                            <button class="absolute text-base md:text-xl px-[30px] py-[10px] bg-primary rounded-lg border-accent cursor-pointer">Shop Now</button>
                             <img class="h-48 sm:h-52 md:h-[240px] float-end" src="c1-assets/cute-pet-mid.png" alt="">
                         </div>
                         
